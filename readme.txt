@@ -1,4 +1,4 @@
-Solution for Advent of Code 2021
+Solution for Advent of Code 2022
 https://adventofcode.com/2022
 
 Each day has its own folder. Inside each folder you can find:
