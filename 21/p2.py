@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-# https://adventofcode.com/2022/day/
+# https://adventofcode.com/2022/day/21
+
+
 from copy import deepcopy
+
+
 kn = {}
 ukn = {}
-known = {}
 with open('i.txt', 'r') as f:
     for line in f.readlines():
         words = line.strip().split(' ')
@@ -17,9 +20,9 @@ left_root = ukn['root'][0]
 right_root = ukn['root'][2]
 
 
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
-# !!!!!!!!!!!!!!!!! MANUALLY ADJUSTED !!!!!!!!!!!!!!! #
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
+# !!!!!!!!!!!!!!!!!!!!!!! MANUALY ADJUSTED !!!!!!!!!!!!!!!!!!!! #
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
 # TODO implement bisection to find proper value programatically
 me = 3032_671_800_000
 # not_enought = 3032_671_800_000
@@ -51,4 +54,3 @@ while True:
         print('P2:', me)
         break
     me += 1
-
